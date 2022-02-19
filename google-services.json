@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "221997114956",
+    "project_id": "hireaskill-f91f2",
+    "storage_bucket": "hireaskill-f91f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221997114956:android:1195694868efd03487f6e9",
+        "android_client_info": {
+          "package_name": "com.example.hireaskill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221997114956-mi8dog63vu5fh1mko36c44c045e3nmqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hireaskill",
+            "certificate_hash": "7cd66bea967fa3744175189efdf208f300c1a753"
+          }
+        },
+        {
+          "client_id": "221997114956-99bui2aqn33o8eli9pt3uoutvfmntksv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWSzykfoQuk0OXcuFSrjHvCC4aG2pbrSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221997114956-99bui2aqn33o8eli9pt3uoutvfmntksv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
