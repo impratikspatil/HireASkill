@@ -67,7 +67,7 @@
 
                 <EditText
                     android:paddingRight="20dp"
-                    android:id="@+id/txtReceiverName"
+                    android:id="@+id/txtName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
@@ -176,6 +176,7 @@
         android:layout_height="56dp"
         android:layout_marginBottom="130dp"
         android:backgroundTint="#FF0000"
+        android:background="@drawable/button_background"
         android:text="SIGN UP"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

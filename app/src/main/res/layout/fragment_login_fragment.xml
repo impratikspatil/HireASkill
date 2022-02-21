@@ -66,7 +66,7 @@
 
             <EditText
                 android:paddingRight="20dp"
-                android:id="@+id/txtReceiverName"
+                android:id="@+id/EmailText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -96,7 +96,7 @@
                 </ImageView>
 
             <EditText
-                android:id="@+id/txtMessage"
+                android:id="@+id/PasswordText"
                 android:layout_width="match_parent"
                 android:backgroundTint="#FF0000"
                 android:layout_height="wrap_content"
@@ -118,9 +118,9 @@
         android:layout_width="113dp"
         android:layout_height="56dp"
         android:layout_marginBottom="130dp"
+        android:background="@drawable/button_background"
         android:backgroundTint="#FF0000"
         android:text="LOGIN"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
