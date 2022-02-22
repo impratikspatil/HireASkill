@@ -6,9 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.hireaskill.Dashboard.DashboardActivity
 import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
+import android.content.Intent
+
+
+
 
 class login_fragment : Fragment() {
 
@@ -32,8 +37,11 @@ class login_fragment : Fragment() {
         fireAuth= FirebaseAuth.getInstance()
 
         binding.registerNow.setOnClickListener{
+
+            val fragment : Fragment?= childFragmentManager.findFragmentByTag(login_fragment::class.java.simpleName)
             binding.loginFrag.removeAllViews()
-            childFragmentManager.beginTransaction().replace(R.id.login_frag,signup_fragment()).commit()
+
+            childFragmentManager.beginTransaction().add(R.id.login_frag,signup_fragment(),signup_fragment::class.java.simpleName).addToBackStack("TAG").commit()
 
         }
 
@@ -62,6 +70,11 @@ class login_fragment : Fragment() {
 
     private fun login() {
         fireAuth.signInWithEmailAndPassword(binding.EmailText.text.toString(),binding.PasswordText.text.toString()).addOnSuccessListener {
+
+            val intent = Intent(activity, DashboardActivity::class.java)
+            startActivity(intent)
+
+
             Toast.makeText(context, "LOGGED IN SUCCESSFULLY", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener{e->
             Toast.makeText(context, "LOGGED IN FAILED DUE TO $e", Toast.LENGTH_SHORT).show()

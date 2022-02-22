@@ -1,4 +1,5 @@
 package com.example.hireaskill.Login
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
@@ -8,10 +9,14 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.hireaskill.Dashboard.DashboardActivity
 import com.example.hireaskill.R
-import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
-import com.example.hireaskill.databinding.FragmentSignupFragmentBinding
+
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.ktx.Firebase
 
 class signup_fragment : Fragment() {
 
@@ -33,6 +38,7 @@ class signup_fragment : Fragment() {
 
         var button : Button = view.findViewById(R.id.registerNow)
         var name : EditText = view.findViewById(R.id.txtName)
+        var phone_number : EditText = view.findViewById(R.id.txtPhone)
         var email : EditText = view.findViewById(R.id.txtEmail)
         var pass1 : EditText = view.findViewById(R.id.txtPass)
         var pass2 : EditText = view.findViewById(R.id.txtPassConfirm)
@@ -51,6 +57,17 @@ class signup_fragment : Fragment() {
                 email.requestFocus()
 
             }
+
+            else if(phone_number.text.toString().isEmpty()){
+                phone_number.error="Phone number can not be empty!"
+                phone_number.requestFocus()
+            }
+            else if(phone_number.text.length!=10){
+                phone_number.error="Phone number must be of 10 digits!"
+                phone_number.requestFocus()
+
+            }
+
             else if(pass1.text.toString().isEmpty()){
                 pass1.error="Password can not be empty!"
                 pass1.requestFocus()
@@ -72,6 +89,23 @@ class signup_fragment : Fragment() {
 
             else {
                 fireAuth.createUserWithEmailAndPassword(email.text.toString(),pass1.text.toString()).addOnSuccessListener {
+
+
+                    val db = FirebaseFirestore.getInstance()
+                    val user:MutableMap<String,Any> = HashMap()
+                    user["Name"]=name.text.toString()
+                    user["Email"]=email.text.toString()
+                    user["Number"]=phone_number.text.toString()
+                    user["user_UID"]= FirebaseAuth.getInstance().currentUser?.uid.toString()
+
+                    Firebase.auth.uid?.let { it1 ->
+                        db.collection("users").document(it1).set(user,
+                            SetOptions.merge())
+
+                        val intent = Intent(activity, DashboardActivity::class.java)
+                        startActivity(intent)
+                    }
+
                     Toast.makeText(context, "ACCOUNT CREATED SUCCESSFULLY", Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener{e->
                     Toast.makeText(context, "ACCOUNT CREATION FAILED DUE TO $e", Toast.LENGTH_SHORT).show()

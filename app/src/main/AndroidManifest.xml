@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HireASkill">
         <activity
+            android:name=".Dashboard.DashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
             tools:ignore="MissingClass" />

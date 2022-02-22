@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
 
        if(fragment !is login_fragment) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragmentContainerView, myFragment, login_fragment::class.java.simpleName)
+                .replace(R.id.fragmentContainerView, myFragment, login_fragment::class.java.simpleName)
                .commit()
         }
     }
