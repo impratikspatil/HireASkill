@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.example.hireaskill.databinding.FragmentSignupFragmentBinding
@@ -16,14 +17,16 @@ import com.google.firebase.auth.FirebaseAuth
 class signup_fragment : Fragment() {
 
     private lateinit var fireAuth : FirebaseAuth
+    private lateinit var binding :FragmentSignupFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
+        binding = FragmentSignupFragmentBinding.inflate(layoutInflater)
+        return binding.root
 
-        return inflater.inflate(R.layout.fragment_signup_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -80,7 +83,20 @@ class signup_fragment : Fragment() {
 
             }
         }
+
+        //changed this code
+
+         val fragmentlogin=login_fragment()
+
+        //changed this code
+        binding.login.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView,fragmentlogin).commit()
+
+        }
+
     }
+
+
 
 
     }

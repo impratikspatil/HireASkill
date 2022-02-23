@@ -3,19 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/button_background.xml" value="0.2578125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/frame6_svg.xml" value="0.3828125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/key.xml" value="0.3828125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/login.xml" value="0.3828125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/edt.xml" value="0.1" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/email_new.xml" value="0.3828125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/key_new.xml" value="0.3828125" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.29438405797101447" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.67" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_signup_fragment.xml" value="0.33" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_test_fragment.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_signup_fragment.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -24,5 +14,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

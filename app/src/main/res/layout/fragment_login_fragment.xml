@@ -14,26 +14,23 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="90dp"
-        android:paddingLeft="20dp"
-        app:cardBackgroundColor="#4A4A4A"
+        app:cardBackgroundColor="@color/login_activity_color"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
             android:orientation="vertical"
             >
 
@@ -41,9 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="LOGIN"
+                android:text="@string/login"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold">
 
             </TextView>
@@ -65,20 +62,21 @@
 
 
             <EditText
-                android:paddingRight="20dp"
+                android:paddingEnd="10dp"
                 android:id="@+id/EmailText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
                 android:backgroundTint="#FF0000"
                 android:inputType="textEmailAddress"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:textColor="@color/white"
                 android:textColorHint="#ACA9A9"
                 android:textSize="20sp"
                 android:paddingStart="10dp"
-
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:autofillHints="emailAddress"/>
             </LinearLayout>
 
             <LinearLayout
@@ -100,14 +98,17 @@
                 android:layout_width="match_parent"
                 android:backgroundTint="#FF0000"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="Password"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:hint="@string/password"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="#ACA9A9"
                 android:inputType="textPassword"
                 android:textSize="20sp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:autofillHints="password" />
             </LinearLayout>
 
         </LinearLayout>
@@ -115,48 +116,55 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="113dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/button_background"
         android:backgroundTint="#FF0000"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/login"
+       app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="130dp"
-        android:layout_marginBottom="100dp"
-        android:text="Don't have an account?"
-        android:textSize="19dp"
-        android:textColor="@color/white"
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/button"
+      android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:ignore="MissingConstraints"></TextView>
+        android:id="@+id/ll"
+
+      >
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="end"
+          android:text="@string/don_t_have_an_account"
+          android:textColor="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/button"
+          tools:ignore="MissingConstraints"/>
 
 
-    <TextView
-        android:id="@+id/register_now"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="100dp"
-        android:text="Register Now"
-        android:textColor="#FF0000"
-        android:textSize="19dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.486" />
+      <TextView
+          android:id="@+id/register_now"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/register_now"
+          android:textColor="#FF0000"
+          android:gravity="start"
+
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/textView"
+          app:layout_constraintTop_toBottomOf="@+id/button" />
+  </LinearLayout>
 
 
 

@@ -17,7 +17,8 @@
         <activity
             android:name=".Login.LoginActivity"
             android:exported="true"
-            tools:ignore="MissingClass">
+            tools:ignore="MissingClass"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

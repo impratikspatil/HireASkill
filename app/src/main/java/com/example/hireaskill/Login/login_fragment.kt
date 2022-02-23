@@ -30,13 +30,13 @@ class login_fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         fireAuth= FirebaseAuth.getInstance()
+        val fragmentsignup=signup_fragment()
 
+        //changed this code
         binding.registerNow.setOnClickListener{
-            binding.loginFrag.removeAllViews()
-            childFragmentManager.beginTransaction().replace(R.id.login_frag,signup_fragment()).commit()
+            requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView,fragmentsignup).commit()
 
         }
-
 
         binding.button.setOnClickListener{
             if(binding.EmailText.text.isEmpty()){
