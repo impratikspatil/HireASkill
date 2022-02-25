@@ -1,5 +1,6 @@
 package com.example.hireaskill.Login
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -15,7 +16,9 @@ class LoginActivity : AppCompatActivity() {
        if(fragment !is login_fragment) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainerView, myFragment).commit()
+
         }
+
     }
 
 
