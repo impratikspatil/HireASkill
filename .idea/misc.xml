@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.20018115942028986" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_add__job_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.12864583333333332" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.33" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_signup_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skill_fragment.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.22" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/menu/btmnav_menu.xml" value="0.30416666666666664" />
       </map>
     </option>
   </component>
@@ -15,12 +20,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.1" />
-      </ProjectState>
-    </option>
   </component>
 </project>

@@ -1,4 +1,5 @@
 package com.example.hireaskill.Login
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
@@ -6,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.hireaskill.Home.MainActivity
 import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -15,6 +17,7 @@ class login_fragment : Fragment() {
 
     private lateinit var binding :FragmentLoginFragmentBinding
     private lateinit var fireAuth : FirebaseAuth
+    var flag=0
 
 
     override fun onCreateView(
@@ -22,6 +25,7 @@ class login_fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentLoginFragmentBinding.inflate(layoutInflater)
+
         return binding.root
     }
 
@@ -37,6 +41,7 @@ class login_fragment : Fragment() {
             requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView,fragmentsignup).commit()
 
         }
+
 
         binding.button.setOnClickListener{
             if(binding.EmailText.text.isEmpty()){
@@ -54,20 +59,25 @@ class login_fragment : Fragment() {
             }
             else {
                 login()
+                val intent=Intent(requireContext(),MainActivity::class.java)
+                startActivity(intent)
+
 
             }
         }
     }
 
 
-    private fun login() {
+    private fun login(){
         fireAuth.signInWithEmailAndPassword(binding.EmailText.text.toString(),binding.PasswordText.text.toString()).addOnSuccessListener {
             Toast.makeText(context, "LOGGED IN SUCCESSFULLY", Toast.LENGTH_SHORT).show()
+
         }.addOnFailureListener{e->
             Toast.makeText(context, "LOGGED IN FAILED DUE TO $e", Toast.LENGTH_SHORT).show()
 
         }
     }
+
 
 
 }

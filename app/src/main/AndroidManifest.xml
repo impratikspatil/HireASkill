@@ -13,7 +13,8 @@
         <activity
             android:name=".Home.MainActivity"
             android:exported="false"
-            tools:ignore="MissingClass" />
+            tools:ignore="MissingClass"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
         <activity
             android:name=".Login.LoginActivity"
             android:exported="true"

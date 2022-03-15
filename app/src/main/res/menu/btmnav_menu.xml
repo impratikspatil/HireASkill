@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jobs_fragment"
+        android:title="@string/jobs"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/add_Job_fragment"
+        android:title="@string/add"
+        android:icon="@drawable/ic_baseline_add_24"
+        />
+
+    <item
+        android:id="@+id/user_skill_fragment"
+        android:title="@string/user_skill"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+</menu>
