@@ -1,4 +1,5 @@
 package com.example.hireaskill.Login
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
@@ -6,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.hireaskill.Home.MainActivity
 import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -54,7 +56,6 @@ class login_fragment : Fragment() {
             }
             else {
                 login()
-
             }
         }
     }
@@ -63,6 +64,8 @@ class login_fragment : Fragment() {
     private fun login() {
         fireAuth.signInWithEmailAndPassword(binding.EmailText.text.toString(),binding.PasswordText.text.toString()).addOnSuccessListener {
             Toast.makeText(context, "LOGGED IN SUCCESSFULLY", Toast.LENGTH_SHORT).show()
+            val intent = Intent(context, MainActivity::class.java)
+            startActivity(intent)
         }.addOnFailureListener{e->
             Toast.makeText(context, "LOGGED IN FAILED DUE TO $e", Toast.LENGTH_SHORT).show()
 

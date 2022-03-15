@@ -11,14 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HireASkill">
         <activity
+            android:name=".Settings.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home.MainActivity"
             android:exported="false"
             tools:ignore="MissingClass" />
         <activity
             android:name=".Login.LoginActivity"
             android:exported="true"
-            tools:ignore="MissingClass"
-            >
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

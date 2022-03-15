@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/settings_icon.xml" value="0.1065" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/user_icon.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/user_profile.xml" value="0.1065" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_settings.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_add__job_fragment.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_user_skill_fragment.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.20018115942028986" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.20018115942028986" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.33" />
