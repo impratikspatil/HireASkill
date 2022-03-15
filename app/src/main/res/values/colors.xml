@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="login_activity_color">#4A4A4A</color>
+    <color name="cardviewcolor">#4A4A4A</color>
 </resources>

@@ -1,4 +1,5 @@
 package com.example.hireaskill.Login
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
+import com.example.hireaskill.Home.MainActivity
 import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.example.hireaskill.databinding.FragmentSignupFragmentBinding
@@ -76,6 +78,9 @@ class signup_fragment : Fragment() {
             else {
                 fireAuth.createUserWithEmailAndPassword(email.text.toString(),pass1.text.toString()).addOnSuccessListener {
                     Toast.makeText(context, "ACCOUNT CREATED SUCCESSFULLY", Toast.LENGTH_SHORT).show()
+                    val intent= Intent(requireContext(), MainActivity::class.java)
+                    startActivity(intent)
+
                 }.addOnFailureListener{e->
                     Toast.makeText(context, "ACCOUNT CREATION FAILED DUE TO $e", Toast.LENGTH_SHORT).show()
 
