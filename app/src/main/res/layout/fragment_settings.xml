@@ -4,30 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Settings.SettingsActivity"
+    tools:context=".Settings.Settings_Fragment"
     android:background="#363636">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:title="Settings"
-            app:titleTextColor="#ffffff">
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
 
 
     <LinearLayout
@@ -36,13 +16,15 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="20dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/userid"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:background="#FFFFFF"
             app:cardCornerRadius="10dp">
 
@@ -67,22 +49,26 @@
                     android:orientation="vertical"
                     android:padding="10dp">
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User Profile"/>
+                        android:text="User Profile"
+                        android:textColor="@color/black"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Edit your profile settings"/>
+                        android:text="Edit your profile settings"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/help"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:background="#FFD8D8"
             app:cardCornerRadius="10dp">
 
@@ -109,11 +95,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Help"/>
+                        android:text="Help"
+                        android:textColor="@color/black"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="help?"/>
+                        android:text="help?"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -122,7 +110,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:background="#FFD8D8"
             app:cardCornerRadius="10dp"
             android:id="@+id/logoutBtn">
@@ -150,17 +138,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Logout"/>
+                        android:text="Logout"
+                        android:textColor="@color/black"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Logout from app"/>
+                        android:text="Logout from app"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/jobs_mentioned"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="20dp"
@@ -190,7 +181,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jobs you mentioned"/>
+                        android:text="Jobs you mentioned"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
             </LinearLayout>

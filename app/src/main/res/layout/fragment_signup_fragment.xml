@@ -60,22 +60,27 @@
 
                 </ImageView>
 
-
-                <EditText
-
-                    android:id="@+id/txtName"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:paddingStart="10dp"
-                    android:backgroundTint="#FF0000"
-                    android:inputType="textPersonName"
                     android:hint="@string/name"
-                    android:textColor="@color/white"
-                    android:textColorHint="#ACA9A9"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
+                    android:textColorHint="@color/grey" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+
+                        android:background="@color/login_activity_color"
+
+                         />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -90,19 +95,27 @@
                     android:src="@drawable/email_new">
                 </ImageView>
 
-                <EditText
-                    android:id="@+id/txtEmail"
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:backgroundTint="#FF0000"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:paddingStart="10dp"
                     android:hint="@string/email"
-                    android:textColor="@color/white"
-                    android:textColorHint="#ACA9A9"
-                    android:inputType="textEmailAddress"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
+                    android:textColorHint="@color/grey"
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/login_activity_color"
+                        android:inputType="textEmailAddress"
+                         />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -119,19 +132,27 @@
 
                 </ImageView>
 
-                <EditText
-                    android:id="@+id/txtPass"
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:backgroundTint="#FF0000"
                     android:hint="@string/password"
-                    android:paddingStart="10dp"
-                    android:inputType="textPassword"
-                    android:textColor="@color/white"
-                    android:textColorHint="#ACA9A9"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
+                    android:textColorHint="@color/grey"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/login_activity_color"
+                        android:inputType="textPassword"
+                         />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -149,19 +170,26 @@
 
                 </ImageView>
 
-                <EditText
-                    android:id="@+id/txtPassConfirm"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:backgroundTint="#FF0000"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
                     android:hint="@string/confirm_password"
-                    android:paddingStart="10dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="#ACA9A9"
-                    android:inputType="textPassword"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
+                    android:textColorHint="@color/grey"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPassConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+
+                        android:background="@color/login_activity_color"
+                        android:inputType="textPassword"
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

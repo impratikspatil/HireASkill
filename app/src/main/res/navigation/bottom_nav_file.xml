@@ -8,16 +8,17 @@
     <fragment
         android:id="@+id/jobs_fragment"
         android:name="com.example.hireaskill.Home.Jobs_fragment"
-        android:label="fragment_jobs_fragment"
+        android:label="JOBS"
         tools:layout="@layout/fragment_jobs_fragment" />
     <fragment
         android:id="@+id/add_Job_fragment"
         android:name="com.example.hireaskill.Home.Add_Job_fragment"
-        android:label="fragment_add__job_fragment"
+        android:label="ADD JOB"
         tools:layout="@layout/fragment_add__job_fragment" />
     <fragment
         android:id="@+id/user_skill_fragment"
         android:name="com.example.hireaskill.Home.User_skill_fragment"
-        android:label="fragment_user_skill_fragment"
+        android:label="USER SKILL"
         tools:layout="@layout/fragment_user_skill_fragment" />
 </navigation>
+

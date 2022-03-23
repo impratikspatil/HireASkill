@@ -41,7 +41,7 @@ class login_fragment : Fragment() {
         }
 
         binding.button.setOnClickListener{
-            if(binding.EmailText.text.isEmpty()){
+            if(binding.EmailText.text?.isEmpty() == true){
                 binding.EmailText.error="Email can not be empty!"
                 binding.EmailText.requestFocus()
             }

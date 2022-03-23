@@ -47,10 +47,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:padding="10dp"
                 >
+
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -59,31 +60,38 @@
                     android:layout_gravity="center_vertical"
                     >
                 </ImageView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColorHint="@color/grey"
+
+                    android:hint="@string/Email">
+
+                    c<com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EmailText"
+                        android:background="@color/login_activity_color"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
 
-            <EditText
-                android:paddingEnd="10dp"
-                android:id="@+id/EmailText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:backgroundTint="#FF0000"
-                android:inputType="textEmailAddress"
-                android:hint="@string/email"
-                android:textColor="@color/white"
-                android:textColorHint="#ACA9A9"
-                android:textSize="20sp"
-                android:paddingStart="10dp"
-                android:textStyle="normal"
-                android:autofillHints="emailAddress"/>
+
+
+
+
+
+
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+               android:padding="10dp"
                 >
 
                 <ImageView
@@ -93,22 +101,28 @@
                     android:src="@drawable/key_new">
                 </ImageView>
 
-            <EditText
-                android:id="@+id/PasswordText"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:backgroundTint="#FF0000"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginStart="5dp"
                 android:hint="@string/password"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:textColor="@color/white"
-                android:textColorHint="#ACA9A9"
-                android:inputType="textPassword"
-                android:textSize="20sp"
-                android:textStyle="normal"
-                android:autofillHints="password" />
+                android:textColorHint="@color/grey"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/PasswordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="password"
+
+                    android:inputType="textPassword"
+                    android:background="@color/login_activity_color"
+
+
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
         </LinearLayout>
