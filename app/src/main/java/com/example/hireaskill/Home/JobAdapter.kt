@@ -36,10 +36,6 @@ class JobAdapter(private val joblist:ArrayList<jobs_data>) : RecyclerView.Adapte
         holder.owner.text=job.owner_name
         holder.location.text=job.location
 
-        //images are not set yet
-
-
-
 
     }
 

@@ -14,6 +14,7 @@ import android.widget.Toolbar
 import androidx.annotation.NonNull
 import androidx.fragment.app.Fragment
 import androidx.navigation.ui.AppBarConfiguration
+import com.example.hireaskill.Login.LoginActivity
 import com.example.hireaskill.Login.login_fragment
 import com.example.hireaskill.R
 
@@ -40,12 +41,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
         val bottomNavigationView=findViewById<BottomNavigationView>(R.id.btmnav)
 
         bottomNavigationView.setupWithNavController(navController)
 
-
     }
+
+    override fun onBackPressed() {
+       moveTaskToBack(true)
+    }
+
 
 }

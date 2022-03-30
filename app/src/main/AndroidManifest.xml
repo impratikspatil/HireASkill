@@ -17,6 +17,7 @@
             android:name=".Home.MainActivity"
             android:exported="false"
             tools:ignore="MissingClass"
+            android:noHistory="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".Login.LoginActivity"

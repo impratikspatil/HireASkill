@@ -1,11 +1,14 @@
 package com.example.hireaskill.Settings
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.example.hireaskill.Home.MainActivity
+import com.example.hireaskill.Login.LoginActivity
 import com.example.hireaskill.R
 
 class SettingsActivity : AppCompatActivity() {
@@ -24,4 +27,10 @@ class SettingsActivity : AppCompatActivity() {
 
 
     }
+
+    override fun onBackPressed() {
+        startActivity(Intent(this, MainActivity::class.java))
+
+    }
+
 }
