@@ -72,6 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/EmailText"
+                        android:textColor="#ffffff"
                         android:background="@color/login_activity_color"
                         />
 
@@ -107,6 +108,7 @@
                 android:layout_marginStart="5dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/grey"
+                app:passwordToggleTint="@color/white"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -114,6 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autofillHints="password"
+                    android:textColor="#ffffff"
 
                     android:inputType="textPassword"
                     android:background="@color/login_activity_color"

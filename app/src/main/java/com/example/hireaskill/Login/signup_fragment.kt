@@ -15,6 +15,10 @@ import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.example.hireaskill.databinding.FragmentSignupFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.ktx.Firebase
 
 class signup_fragment : Fragment() {
 
@@ -77,7 +81,24 @@ class signup_fragment : Fragment() {
 
             else {
                 fireAuth.createUserWithEmailAndPassword(email.text.toString(),pass1.text.toString()).addOnSuccessListener {
+
+                    val user : MutableMap<String,Any> = HashMap()
+                    val db = FirebaseFirestore.getInstance()
+                    user["username"]=name.text.toString()
+                    user["email"]=email.text.toString()
+                    user["number"]=""
+                    user["profile_url"]=""
+                    user["id"]=FirebaseAuth.getInstance().currentUser?.uid.toString()
+
+                    Firebase.auth.uid?.let { it1 ->
+                        db.collection("users").document(it1).set(user, SetOptions.merge())
+                    }
+
+
+
                     Toast.makeText(context, "ACCOUNT CREATED SUCCESSFULLY", Toast.LENGTH_SHORT).show()
+
+
                     val intent= Intent(requireContext(), MainActivity::class.java)
                     startActivity(intent)
 

@@ -1,5 +1,4 @@
 package com.example.hireaskill.Settings
-
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
