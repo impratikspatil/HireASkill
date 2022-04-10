@@ -26,6 +26,4 @@ class User_skill_fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_user_skill_fragment, container, false)
     }
-
-
 }

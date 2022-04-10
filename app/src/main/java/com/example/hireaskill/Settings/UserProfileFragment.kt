@@ -91,7 +91,7 @@ class UserProfileFragment : Fragment() {
                 if (document != null) {
 
                     val image_url = document.getString("profile_url")
-                    if(image_url!=null){
+                    if(image_url!=""){
                         Picasso.get().load(image_url).error(R.drawable.profile_person)
                             .into(profile)
 
@@ -155,7 +155,10 @@ class UserProfileFragment : Fragment() {
 
                 showProgressBar()
 
+                if(selectedPhotoUri!=null){
+
                 selectedPhotoUri?.let { uploadProfilePic(it) }
+                }
 
                 val user : MutableMap<String,Any> = hashMapOf()
 
