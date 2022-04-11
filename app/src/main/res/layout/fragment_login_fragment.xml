@@ -72,18 +72,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/EmailText"
+                        android:inputType="textEmailAddress"
                         android:textColor="#ffffff"
                         android:background="@color/login_activity_color"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
-
-
-
 
 
             </LinearLayout>

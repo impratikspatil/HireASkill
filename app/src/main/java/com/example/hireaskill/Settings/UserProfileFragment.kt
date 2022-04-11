@@ -73,6 +73,35 @@ class UserProfileFragment : Fragment() {
             startActivityForResult(intent,0)
         }
 
+       val save : Button = view.findViewById(R.id.savebtn)
+        save.setOnClickListener {
+
+            showProgressBar()
+
+            val user : MutableMap<String,Any> = hashMapOf()
+
+            user["username"]=name.text.toString()
+
+            user["number"]=number.text.toString()
+
+            Firebase.auth.uid?.let { it1 ->
+                val db=FirebaseFirestore.getInstance()
+                db.collection("users").document(it1).set(user, SetOptions.merge())
+            }?.addOnSuccessListener {
+
+                hideProgressBar()
+
+                Toast.makeText(context, "INFORMATION UPDATED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
+
+            }
+                ?.addOnFailureListener{ e->
+                    Toast.makeText(context, "ERROR OCCURED $e ", Toast.LENGTH_SHORT).show()
+
+                }
+
+
+        }
+
 
 
 
@@ -158,10 +187,10 @@ class UserProfileFragment : Fragment() {
                 if(selectedPhotoUri!=null){
 
                 selectedPhotoUri?.let { uploadProfilePic(it) }
+
                 }
 
                 val user : MutableMap<String,Any> = hashMapOf()
-
 
                 user["username"]=name.text.toString()
 
@@ -177,7 +206,6 @@ class UserProfileFragment : Fragment() {
                         Toast.makeText(context, "ERROR OCCURED $e ", Toast.LENGTH_SHORT).show()
 
                     }
-
 
             }
 
@@ -202,7 +230,7 @@ class UserProfileFragment : Fragment() {
 
                     hideProgressBar()
 
-                    Toast.makeText(context, "INFORMATION SAVED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "INFORMATION UPDATED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
 
                     val user:MutableMap<String,Any> = HashMap()
                     user["profile_url"]=it.toString()
