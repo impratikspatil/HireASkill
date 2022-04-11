@@ -164,15 +164,15 @@ class UserProfileFragment : Fragment() {
     var selectedPhotoUri: Uri?=null
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        val profile : ImageView = view!!.findViewById(R.id.profile_pic)
+        val profile : ImageView = requireView().findViewById(R.id.profile_pic)
         if(requestCode==0 && resultCode== Activity.RESULT_OK && data!= null){
 
 
-            val save : Button = view!!.findViewById(R.id.savebtn)
-            val name : TextView = view!!.findViewById(R.id.name)
+            val save : Button = requireView().findViewById(R.id.savebtn)
+            val name : TextView = requireView().findViewById(R.id.name)
             //val email : TextView = view.findViewById(R.id.email)
-            val profile : ImageView = view!!.findViewById(R.id.profile_pic)
-            val number : TextView = view!!.findViewById(R.id.phone)
+            val profile : ImageView = requireView().findViewById(R.id.profile_pic)
+            val number : TextView = requireView().findViewById(R.id.phone)
 
 
             selectedPhotoUri =data.data
@@ -250,7 +250,7 @@ class UserProfileFragment : Fragment() {
     }
     private fun showProgressBar(){
 
-        dialog = Dialog(context!!)
+        dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.dialog_progress)
         dialog.setCanceledOnTouchOutside(true)

@@ -22,4 +22,10 @@
     <string name="mobile_number">Mobile Number</string>
     <string name="email_pro">Email</string>
     <string name="username">Username</string>
+    <string name="hire">HIRE</string>
+    <string name="job_title">Job title</string>
+    <string name="location">Location</string>
+    <string name="requirements">Requirements</string>
+    <string name="salary">Salary(INR)</string>
+
 </resources>

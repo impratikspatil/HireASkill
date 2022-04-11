@@ -72,7 +72,6 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:textColor="#ffffff"
-
                         android:background="@color/login_activity_color"
 
                          />
