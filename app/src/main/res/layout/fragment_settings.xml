@@ -25,14 +25,15 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="30dp"
-            android:background="#FFFFFF"
+
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:background="#FFD8D8">
+                android:background="@color/login_activity_color"
+             >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/user_icon"
+
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -48,17 +50,22 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="10dp">
+
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User Profile"
-                        android:textColor="@color/black"/>
+                        android:text="@string/user_profile"
+                        android:textColor="@color/white"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
                         android:text="Edit your profile settings"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -69,14 +76,14 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="30dp"
-            android:background="#FFD8D8"
+
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:background="#FFD8D8">
+                android:background="@color/login_activity_color">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,7 +91,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/user_icon"
+                        android:src="@drawable/ic_baseline_help_24"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -96,12 +103,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Help"
-                        android:textColor="@color/black"/>
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="help?"
-                        android:textColor="@color/black"/>
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -111,7 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="30dp"
-            android:background="#FFD8D8"
+
             app:cardCornerRadius="10dp"
             android:id="@+id/logoutBtn">
 
@@ -119,7 +129,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:background="#FFD8D8">
+                android:background="@color/login_activity_color"
+              >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -127,7 +138,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/user_icon"
+                        android:src="@drawable/ic_baseline_logout_24"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -139,12 +150,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Logout"
-                        android:textColor="@color/black"/>
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                  />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Logout from app"
-                        android:textColor="@color/black"/>
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -155,14 +170,14 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="20dp"
-            android:background="#FFD8D8"
+
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:background="#FFD8D8">
+                android:background="@color/login_activity_color">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -170,7 +185,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/user_icon"
+                        android:src="@drawable/ic_baseline_dashboard_24"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -182,7 +197,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Jobs you mentioned"
-                        android:textColor="@color/black"/>
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </LinearLayout>
