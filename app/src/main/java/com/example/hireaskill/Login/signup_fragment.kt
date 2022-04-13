@@ -9,10 +9,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.fragment.app.FragmentTransaction
 import com.example.hireaskill.Home.MainActivity
 import com.example.hireaskill.R
-import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
 import com.example.hireaskill.databinding.FragmentSignupFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

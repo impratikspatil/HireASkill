@@ -91,7 +91,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_help_24"
+                        android:src="@drawable/user_icon"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -138,7 +138,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_logout_24"
+                        android:src="@drawable/user_icon"
                         />
                 </LinearLayout>
                 <LinearLayout
