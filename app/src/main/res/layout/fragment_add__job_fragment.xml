@@ -119,7 +119,7 @@
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtEmail"
+                            android:id="@+id/txtjobtitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textCursorDrawable="@drawable/cursor"
@@ -158,7 +158,7 @@
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtPass"
+                            android:id="@+id/txtlocation"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textCursorDrawable="@drawable/cursor"
@@ -242,7 +242,7 @@
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtPassConfirm"
+                            android:id="@+id/txtrequirements"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
@@ -260,7 +260,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/add_jobs_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
