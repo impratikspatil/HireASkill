@@ -1,6 +1,7 @@
 package com.example.hireaskill.Home
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -41,16 +42,16 @@ class Add_Job_fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.addJobsBtn.setOnClickListener {
-            val userid_forjob = FirebaseAuth.getInstance().currentUser
+            val userid_forjob = FirebaseAuth.getInstance().currentUser?.uid
             val username=binding.txtName.text.toString()
             val Job_Title=binding.txtjobtitle.text.toString()
             val Location=binding.txtlocation.text.toString()
             val Salary=binding.salary.text.toString()
             val Description=binding.txtrequirements.text.toString()
 
-            database=FirebaseDatabase.getInstance().getReference("username")
+            database=FirebaseDatabase.getInstance().getReference(userid_forjob.toString())
             val userJob=UserJob(username,Job_Title,Location,Salary,Description)
-            database.child(userid_forjob.toString()).setValue(userJob).addOnSuccessListener {
+            database.child(Job_Title).setValue(userJob).addOnSuccessListener {
                 binding.txtName.text?.clear()
                 binding.txtjobtitle.text?.clear()
                 binding.txtlocation.text?.clear()
@@ -60,7 +61,9 @@ class Add_Job_fragment : Fragment() {
 
 
 
+
             }.addOnFailureListener {
+
 
 
 
