@@ -41,6 +41,8 @@ class Add_Job_fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         binding.addJobsBtn.setOnClickListener {
             val userid_forjob = FirebaseAuth.getInstance().currentUser?.uid
             val username=binding.txtName.text.toString()
@@ -58,11 +60,14 @@ class Add_Job_fragment : Fragment() {
                 binding.salary.text?.clear()
                 binding.txtrequirements.text?.clear()
 
+                Toast.makeText(context, "INFORMATION UPDATED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
+
 
 
 
 
             }.addOnFailureListener {
+                Toast.makeText(context, "INFORMATION FAILED TO UPDATE ", Toast.LENGTH_SHORT).show()
 
 
 
