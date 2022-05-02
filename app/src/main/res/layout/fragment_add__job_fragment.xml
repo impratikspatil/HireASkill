@@ -2,7 +2,6 @@
 
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,7 +15,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#363636"
-    tools:context=".Home.add_job_fragment">
+    tools:context=".Home.Add_Job_fragment">
 
 
 
@@ -61,9 +60,10 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="5dp"
-                        android:src="@drawable/user_icon_white"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/user_profile"
 
                         >
 
@@ -72,17 +72,13 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:endIconMode="clear_text"
                         android:hint="@string/username"
-                        style="@style/LoginTextInputLayoutStyle"
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:cursorVisible="true"
-                            android:textCursorDrawable="@drawable/cursor"
                             android:backgroundTint="@color/login_activity_color"
                             android:inputType="textPersonName"
                             android:textColor="#ffffff"
@@ -106,23 +102,19 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_baseline_title_24"
-                        app:tint="@color/white"/>
+                        android:src="@drawable/ic_baseline_title_24"/>
 
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/job_title"
-                        style="@style/LoginTextInputLayoutStyle"
-                        app:endIconMode="clear_text"
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtjobtitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textCursorDrawable="@drawable/cursor"
                             android:backgroundTint="@color/login_activity_color"
                             android:inputType="textShortMessage"
                             android:textColor="#ffffff" />
@@ -143,8 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_baseline_location_on_24"
-                        app:tint="@color/white">
+                        android:src="@drawable/ic_baseline_location_on_24">
 
                     </ImageView>
 
@@ -153,15 +144,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/location"
-                        style="@style/LoginTextInputLayoutStyle"
-                        app:endIconMode="clear_text"
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtlocation"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textCursorDrawable="@drawable/cursor"
                             android:backgroundTint="@color/login_activity_color"
                             android:inputType="textShortMessage"
                             android:textColor="#ffffff"
@@ -185,8 +173,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_baseline_currency_rupee_24"
-                        app:tint="@color/white">
+                        android:src="@drawable/ic_baseline_currency_rupee_24">
 
                     </ImageView>
 
@@ -195,15 +182,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/salary"
-                        app:endIconMode="clear_text"
-                        style="@style/LoginTextInputLayoutStyle"
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/salary"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textCursorDrawable="@drawable/cursor"
                             android:backgroundTint="@color/login_activity_color"
                             android:inputType="number"
                             android:textColor="#ffffff"
@@ -228,17 +212,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_baseline_edit_note_24"
-                        app:tint="@color/white">
+                        android:src="@drawable/ic_baseline_edit_note_24">
 
                     </ImageView>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/LoginTextInputLayoutStyle"
                         android:hint="@string/requirements"
-                        app:endIconMode="clear_text"
                         android:textColorHint="@color/grey">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -246,7 +227,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
-                            android:textCursorDrawable="@drawable/cursor"
                             android:backgroundTint="@color/login_activity_color"
                             android:inputType="textLongMessage"
                             android:textColor="#ffffff" />
@@ -260,7 +240,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/add_jobs_btn"
+            android:id="@+id/addJobsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
