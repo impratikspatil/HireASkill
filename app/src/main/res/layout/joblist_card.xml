@@ -23,7 +23,7 @@
                   android:id="@+id/jobtitle"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:background="@color/purple_500"
+
                   android:textSize="20sp"
                   android:textStyle="bold"
                   android:text="ANDROID DEVELOPER"/>
@@ -33,7 +33,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:layout_marginStart="20dp"
-                 android:background="@color/purple_500"
+
                  android:text="15/month"
                  android:layout_marginBottom="5dp"
                  android:textStyle="bold"
@@ -63,7 +63,7 @@
                 android:id="@+id/owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_500"
+
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="PRATIK PATIL"
@@ -90,7 +90,7 @@
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_500"
+
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="Location"

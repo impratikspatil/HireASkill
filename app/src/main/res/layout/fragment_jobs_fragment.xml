@@ -6,12 +6,11 @@
     android:background="#363636"
     tools:context=".Home.Jobs_fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jobs_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:text="Jobs fragment" />
-
+        android:padding="10dp"
+        />
 </FrameLayout>

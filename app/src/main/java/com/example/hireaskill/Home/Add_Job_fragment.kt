@@ -1,5 +1,6 @@
 package com.example.hireaskill.Home
 
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -51,27 +52,27 @@ class Add_Job_fragment : Fragment() {
             val Salary=binding.salary.text.toString()
             val Description=binding.txtrequirements.text.toString()
 
-            database=FirebaseDatabase.getInstance().getReference(userid_forjob.toString())
+            database=FirebaseDatabase.getInstance().getReference("Jobs")
             val userJob=UserJob(username,Job_Title,Location,Salary,Description)
-            database.child(Job_Title).setValue(userJob).addOnSuccessListener {
-                binding.txtName.text?.clear()
-                binding.txtjobtitle.text?.clear()
-                binding.txtlocation.text?.clear()
-                binding.salary.text?.clear()
-                binding.txtrequirements.text?.clear()
+            val hash = HashMap<String,Any>()
+            hash.put(Job_Title,userJob)
 
-                Toast.makeText(context, "INFORMATION UPDATED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
+            //hash[Job_Title] = userJob
+            if (userid_forjob != null) {
+                database.child(userid_forjob).updateChildren(hash).addOnSuccessListener {
+                    binding.txtName.text?.clear()
+                    binding.txtjobtitle.text?.clear()
+                    binding.txtlocation.text?.clear()
+                    binding.salary.text?.clear()
+                    binding.txtrequirements.text?.clear()
 
+                    Toast.makeText(context, "INFORMATION UPDATED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
 
+                }.addOnFailureListener {
 
+                    Toast.makeText(context, "INFORMATION FAILED TO UPDATE ", Toast.LENGTH_SHORT).show()
 
-
-            }.addOnFailureListener {
-                Toast.makeText(context, "INFORMATION FAILED TO UPDATE ", Toast.LENGTH_SHORT).show()
-
-
-
-
+                }
             }
 
         }

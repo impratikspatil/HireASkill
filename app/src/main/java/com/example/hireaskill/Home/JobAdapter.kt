@@ -7,8 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
+import com.google.firebase.firestore.auth.User
 
-class JobAdapter(private val joblist:ArrayList<jobs_data>) : RecyclerView.Adapter<JobAdapter.jobviewholder>() {
+class JobAdapter(private val joblist:ArrayList<UserJob>) : RecyclerView.Adapter<JobAdapter.jobviewholder>() {
 
     class jobviewholder(view: View): RecyclerView.ViewHolder(view)
     {
@@ -29,12 +30,12 @@ class JobAdapter(private val joblist:ArrayList<jobs_data>) : RecyclerView.Adapte
 
 
     override fun onBindViewHolder(holder: jobviewholder, position: Int) {
-        val job:jobs_data = joblist[position]
+        val job = joblist[position]
 
-        holder.jobtitle.text=job.job_title
-        holder.salary.text=job.salary
-        holder.owner.text=job.owner_name
-        holder.location.text=job.location
+        holder.jobtitle.text=job.jobt
+        holder.salary.text=job.jobsal
+        holder.owner.text=job.username
+        holder.location.text=job.jobloc
 
 
     }
