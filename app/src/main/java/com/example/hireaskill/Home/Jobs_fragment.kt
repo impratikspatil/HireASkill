@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.VisibleForTesting
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
@@ -42,7 +43,7 @@ class Jobs_fragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.setHasFixedSize(true)
         return binding.root
-        // Inflate the layout for this fragment
+        //Inflate the layout for this fragment
 
     }
 
@@ -51,7 +52,7 @@ class Jobs_fragment : Fragment() {
 
         val userid = FirebaseAuth.getInstance().currentUser!!.uid
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Jobs").child(userid)
+        dbRef = FirebaseDatabase.getInstance().getReference("Jobs")
         dbRef.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 datalist.clear()
@@ -59,9 +60,24 @@ class Jobs_fragment : Fragment() {
                 if(snapshot.exists()){
                     for(jobdata in snapshot.children){
 
-                        val data = jobdata.getValue(UserJob::class.java)
-                        Log.d("TAG", "${data!!.jobt}")
-                        datalist.add(data!!)
+                        val data = jobdata.getValue(object : GenericTypeIndicator<HashMap<String,HashMap<String,String>>>() {})
+                        for(set in data!!.values){
+                            val da = mutableListOf<String>()
+                            da.clear()
+                            for(dat in set.values){
+                                da.add(dat.toString())
+                            }
+
+                            val abc = UserJob(da[0],da[3],da[1]," ",da[4])
+                            datalist.add(abc)
+
+
+
+                            //datalist.add(dat!!)
+                        }
+//                        val data = jobdata.getValue(UserJob::class.java)
+//                        datalist.add(data!!)
+
                     }
                     val jobadapter = JobAdapter(datalist)
                     recyclerView.adapter = jobadapter

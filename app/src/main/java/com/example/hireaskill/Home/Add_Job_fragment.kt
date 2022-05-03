@@ -56,7 +56,6 @@ class Add_Job_fragment : Fragment() {
             val userJob=UserJob(username,Job_Title,Location,Salary,Description)
             val hash = HashMap<String,Any>()
             hash.put(Job_Title,userJob)
-
             //hash[Job_Title] = userJob
             if (userid_forjob != null) {
                 database.child(userid_forjob).updateChildren(hash).addOnSuccessListener {

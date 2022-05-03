@@ -1,5 +1,6 @@
 package com.example.hireaskill.Home
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,15 +16,13 @@ class JobAdapter(private val joblist:ArrayList<UserJob>) : RecyclerView.Adapter<
     {
        val jobtitle:TextView=view.findViewById(R.id.jobtitle)
        val salary:TextView=view.findViewById(R.id.salary)
-       val ownerimage:ImageView=view.findViewById(R.id.ownerimg)
-       val owner:TextView=view.findViewById(R.id.owner)
-       val icon:ImageView=view.findViewById(R.id.loc_icon)
        val location:TextView=view.findViewById(R.id.location)
+        val owner:TextView=view.findViewById(R.id.owner)
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): jobviewholder {
-        val adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.joblist_card, parent, false)
+        val adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.add_job_items, parent, false)
 
         return jobviewholder(adapterLayout)
     }
@@ -32,10 +31,11 @@ class JobAdapter(private val joblist:ArrayList<UserJob>) : RecyclerView.Adapter<
     override fun onBindViewHolder(holder: jobviewholder, position: Int) {
         val job = joblist[position]
 
+
         holder.jobtitle.text=job.jobt
         holder.salary.text=job.jobsal
-        holder.owner.text=job.username
         holder.location.text=job.jobloc
+        holder.owner.text=job.username
 
 
     }

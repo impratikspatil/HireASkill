@@ -7,12 +7,9 @@
 
     tools:context=".Settings.MentionedJobsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jobs_mentioned_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="#ffffff"
-        android:text="@string/jobs_mentioned"
-        android:gravity="center_horizontal"/>
-
+        tools:listitem="@layout/add_job_items"/>
 </FrameLayout>

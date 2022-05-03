@@ -11,6 +11,6 @@
         android:id="@+id/jobs_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
+        tools:listitem="@layout/add_job_items"
         />
 </FrameLayout>

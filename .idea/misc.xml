@@ -46,8 +46,9 @@
         <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.185" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_icon.xml" value="0.185" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.14673913043478262" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.14673913043478262" />
+        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.2" />
+        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.176" />
+        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.264" />
         <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.264" />
       </map>

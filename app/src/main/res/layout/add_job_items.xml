@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="30dp"
-        android:layout_margin="20dp"
+        android:layout_margin="8dp"
         >
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,15 +27,12 @@
                 android:layout_marginEnd="15dp"
                 android:textSize="20sp"/>
             <TextView
+                android:id="@+id/jobtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                android:hint="Enter job title"
                 android:layout_marginEnd="15dp"
                 android:textSize="20sp"/>
-
-
-
-
                 />
         </LinearLayout>
         <LinearLayout
@@ -52,6 +49,7 @@
                 android:layout_marginEnd="15dp"
                 android:textSize="20sp"/>
             <TextView
+                android:id="@+id/salary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Enter salary amount "
@@ -76,6 +74,8 @@
                 android:text="Location:-"
                 android:textSize="20sp"/>
             <TextView
+
+                android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Enter Location"
@@ -99,13 +99,14 @@
                 android:layout_marginEnd="15dp"
                 android:textSize="20sp"/>
 
+
             <TextView
+                android:id="@+id/owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint=" Enter Owner name"
                 android:layout_marginEnd="15dp"
-                android:textSize="20sp"/>
-
+                android:hint=" Enter Owner name"
+                android:textSize="20sp" />
 
             <ImageView
                 android:layout_width="wrap_content"

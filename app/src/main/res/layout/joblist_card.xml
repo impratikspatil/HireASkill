@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
     android:background="@color/cardviewcolor"
+    android:layout_margin="10dp"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
              >
 
               <TextView
-                  android:id="@+id/jobtitle"
+
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
 
@@ -29,7 +30,7 @@
                   android:text="ANDROID DEVELOPER"/>
 
              <TextView
-                 android:id="@+id/salary"
+
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:layout_marginStart="20dp"
@@ -60,7 +61,6 @@
                 android:src="@drawable/ic_baseline_person_24"/>
 
             <TextView
-                android:id="@+id/owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -87,7 +87,6 @@
                 android:src="@drawable/ic_baseline_person_24"/>
 
             <TextView
-                android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
