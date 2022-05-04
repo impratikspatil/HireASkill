@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#363636"
+    tools:context=".Settings.UserProfileFragment">
+
+    <TextView
+        android:id="@+id/textprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_cardview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+        android:background="#4A4A4A"
+        android:backgroundTint="#4A4A4A"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textprofile"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="PROFILE"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:id="@+id/profile_pic"
+                android:layout_height="160dp"
+                app:civ_border_overlay="true"
+                app:civ_border_width="1sp"
+                app:civ_border_color="#FF0000"
+                android:src="@drawable/profile_person"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/grey"
+                app:startIconDrawable="@drawable/user_icon_white"
+                app:startIconTint="@color/white"
+                android:hint="@string/username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/name"
+                    android:background="@color/login_activity_color"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/grey"
+
+                app:prefixText="+91 "
+                app:prefixTextColor="#ff0000"
+                app:startIconDrawable="@drawable/ic_baseline_call_24"
+                app:startIconTint="@color/white"
+                android:hint="@string/mobile_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/phone"
+                    android:background="@color/login_activity_color"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#ffffff"
+                    android:maxLength="10"
+
+
+
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/savebtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+        android:gravity="center_horizontal"
+        android:text="@string/save"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cardview" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
