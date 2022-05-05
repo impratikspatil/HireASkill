@@ -5,12 +5,16 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="30dp"
-        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="#F4D2D2"
         >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#F1E2E2"
         android:orientation="vertical">
 
         <LinearLayout
@@ -23,15 +27,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jobtitle"
-                android:layout_marginEnd="15dp"
+                android:text="Jobtitle  :-"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
                 android:textSize="20sp"/>
             <TextView
                 android:id="@+id/jobtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                android:hint="Enter job title"
-                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginStart="15dp"
                 android:textSize="20sp"/>
                 />
         </LinearLayout>
@@ -45,18 +51,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Salary :-"
-                android:layout_marginEnd="15dp"
+                android:text="Salary    :-"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp"/>
             <TextView
                 android:id="@+id/salary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Enter salary amount "
-                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginStart="15dp"
                 android:textSize="20sp"/>
-
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" INR"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
 
 
             />
@@ -71,7 +82,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location:-"
+                android:text="Location :-"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp"/>
             <TextView
 
@@ -79,6 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Enter Location"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"/>
@@ -95,8 +109,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Owner :-"
-                android:layout_marginEnd="15dp"
+                android:text="Owner    :-"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp"/>
 
 
@@ -104,16 +119,12 @@
                 android:id="@+id/owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
                 android:hint=" Enter  name"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_call_24"
-                android:layout_marginEnd="10dp"
-                />
+
 
         </LinearLayout>
     </LinearLayout>

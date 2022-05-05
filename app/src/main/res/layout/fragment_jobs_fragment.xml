@@ -4,11 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#363636"
+
     tools:context=".Home.Jobs_fragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/jobs_rv"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/add_job_items"
