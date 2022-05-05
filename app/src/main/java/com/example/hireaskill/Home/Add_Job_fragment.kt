@@ -1,6 +1,5 @@
 package com.example.hireaskill.Home
 
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -42,34 +41,53 @@ class Add_Job_fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         binding.addJobsBtn.setOnClickListener {
-            val userid_forjob = FirebaseAuth.getInstance().currentUser?.uid
-            val username=binding.txtName.text.toString()
-            val Job_Title=binding.txtjobtitle.text.toString()
-            val Location=binding.txtlocation.text.toString()
-            val Salary=binding.salary.text.toString()
-            val Description=binding.txtrequirements.text.toString()
 
-            database=FirebaseDatabase.getInstance().getReference("Jobs")
-            val userJob=UserJob(username,Job_Title,Location,Salary,Description)
-            val hash = HashMap<String,Any>()
-            hash.put(Job_Title,userJob)
-            //hash[Job_Title] = userJob
-            if (userid_forjob != null) {
-                database.child(userid_forjob).updateChildren(hash).addOnSuccessListener {
+            if(binding.txtName.text?.isEmpty() == true){
+                binding.txtName.error="Username can not be empty!"
+                binding.txtName.requestFocus()
+            }
+            else if(binding.txtjobtitle.text.toString().isEmpty()){
+                binding.txtjobtitle.error="Job title can not be empty!"
+                binding.txtjobtitle.requestFocus()
+            }
+            else if(binding.txtlocation.text.toString().isEmpty()){
+                binding.txtlocation.error="Location can not be empty!"
+                binding.txtlocation.requestFocus()
+            }
+            else if(binding.txtrequirements.text.toString().isEmpty()){
+                binding.txtrequirements.error="Requirements can not be empty!"
+                binding.txtrequirements.requestFocus()
+            }
+            else if(binding.salary.text.toString().isEmpty()){
+                binding.salary.error="Salary can not be empty!"
+                binding.salary.requestFocus()
+            }
+
+            else {
+
+                val userid_forjob = FirebaseAuth.getInstance().currentUser?.uid
+                val username = binding.txtName.text.toString()
+                val Job_Title = binding.txtjobtitle.text.toString()
+                val Location = binding.txtlocation.text.toString()
+                val Salary = binding.salary.text.toString()
+                val Description = binding.txtrequirements.text.toString()
+
+                database = FirebaseDatabase.getInstance().getReference(userid_forjob.toString())
+                val userJob = UserJob(username, Job_Title, Location, Salary, Description)
+                database.child(Job_Title).setValue(userJob).addOnSuccessListener {
+
                     binding.txtName.text?.clear()
                     binding.txtjobtitle.text?.clear()
                     binding.txtlocation.text?.clear()
                     binding.salary.text?.clear()
                     binding.txtrequirements.text?.clear()
-
-                    Toast.makeText(context, "INFORMATION UPDATED SUCCESSFULLY ", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,"Job Added Successfully!!",Toast.LENGTH_SHORT).show()
 
                 }.addOnFailureListener {
 
-                    Toast.makeText(context, "INFORMATION FAILED TO UPDATE ", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,"Failed To Add Job!!",Toast.LENGTH_SHORT).show()
+
 
                 }
             }
