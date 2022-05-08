@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/contaier"
     tools:context=".Home.MainActivity">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -46,9 +47,10 @@
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/btmnav"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
-        app:layout_constraintVertical_bias="0.344"
+        app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/bottom_nav_file" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -62,6 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:labelVisibilityMode="labeled"
          />
+
 
 
 

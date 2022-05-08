@@ -13,6 +13,7 @@ import android.widget.ImageView
 import android.widget.Toolbar
 import androidx.annotation.NonNull
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.hireaskill.Login.LoginActivity
 import com.example.hireaskill.Login.login_fragment
@@ -21,8 +22,11 @@ import com.example.hireaskill.R
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.example.hireaskill.Settings.SettingsActivity
+import com.example.hireaskill.databinding.AddJobItemsBinding
 import com.google.android.gms.tasks.Task
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
+import com.example.hireaskill.Home.Add_Job_fragment as Add_Job_fragment1
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,21 +39,26 @@ class MainActivity : AppCompatActivity() {
         val config= AppBarConfiguration(navController.graph)
         findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar).setupWithNavController(navController,config)
 
+
         val settings_img= findViewById<ImageView>(R.id.settingsBtn)
+        val bottomNavigationView=findViewById<BottomNavigationView>(R.id.btmnav)
+
         settings_img.setOnClickListener{
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
-
-        val bottomNavigationView=findViewById<BottomNavigationView>(R.id.btmnav)
-
         bottomNavigationView.setupWithNavController(navController)
+
+
+
 
     }
 
     override fun onBackPressed() {
        moveTaskToBack(true)
     }
+
+
 
 
 }

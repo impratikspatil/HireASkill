@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentAddJobFragmentBinding
 import com.example.hireaskill.databinding.FragmentLoginFragmentBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -21,6 +22,7 @@ class Add_Job_fragment : Fragment() {
 
     private lateinit var binding:FragmentAddJobFragmentBinding
     private lateinit var database:DatabaseReference
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +44,11 @@ class Add_Job_fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+//        val inflater=LayoutInflater.from(requireContext())
+//        val v = inflater.inflate(R.layout.fragment_add__job_fragment, null)
+//        val bottomNavigationView=view.findViewById<BottomNavigationView>(R.id.btmnav)
+//        bottomNavigationView.visibility = View.GONE
+
 
 
         binding.addJobsBtn.setOnClickListener {
@@ -53,7 +60,7 @@ class Add_Job_fragment : Fragment() {
             val Description=binding.txtrequirements.text.toString()
 
             database=FirebaseDatabase.getInstance().getReference("Jobs")
-            val userJob=UserJob(username,Job_Title,Location,Salary,Description)
+            val userJob=UserJob(Job_Title,Location,Salary,Description,username,userid_forjob)
             val hash = HashMap<String,Any>()
             hash.put(Job_Title,userJob)
             //hash[Job_Title] = userJob
