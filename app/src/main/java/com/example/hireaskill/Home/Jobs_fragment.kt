@@ -7,6 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.VisibleForTesting
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
@@ -49,6 +53,14 @@ class Jobs_fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val navController=findNavController()
+
+        binding.floatbtn.setOnClickListener {
+
+            navController.navigate(R.id.action_jobs_fragment_to_add_Job_fragment)
+
+
+        }
 
         val userid = FirebaseAuth.getInstance().currentUser!!.uid
 

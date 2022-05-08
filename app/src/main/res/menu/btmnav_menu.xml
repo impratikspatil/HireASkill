@@ -8,9 +8,9 @@
         />
 
     <item
-        android:id="@+id/add_Job_fragment"
-        android:title="@string/add"
-        android:icon="@drawable/ic_baseline_add_24"
+        android:id="@+id/chatFragment"
+        android:title="@string/chat"
+        android:icon="@drawable/ic_baseline_chat_24"
         />
 
     <item

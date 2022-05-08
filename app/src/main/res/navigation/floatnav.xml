@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatnav"
+    app:startDestination="@id/jobs_fragment2">
+    <fragment
+        android:id="@+id/jobs_fragment2"
+        android:name="com.example.hireaskill.Home.Jobs_fragment"
+        android:label="fragment_jobs_fragment"
+        tools:layout="@layout/fragment_jobs_fragment" >
+        <action
+            android:id="@+id/action_jobs_fragment2_to_add_Job_fragment3"
+            app:destination="@id/add_Job_fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Job_fragment3"
+        android:name="com.example.hireaskill.Home.Add_Job_fragment"
+        android:label="Add_Job_fragment" />
+</navigation>
