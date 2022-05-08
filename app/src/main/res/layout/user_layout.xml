@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/messageboxbg"
+        android:backgroundTint="#F4D2D2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:padding="10dp"
+            android:src="@drawable/user_profile2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-6dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/image_rv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

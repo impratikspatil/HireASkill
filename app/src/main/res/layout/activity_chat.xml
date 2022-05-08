@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.ChatActivity">
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appBarLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar_chat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?attr/colorPrimary"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            android:theme="?attr/actionBarTheme"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+
+<!--            app:titleTextColor="#ffffff" />-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/messageBox"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@color/teal_200"
+            android:hint="Type a message"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="85"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:background="@drawable/messageboxbg"/>
+        <ImageView
+            android:id="@+id/sentButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icons8_send_letter_50"
+            android:layout_weight="20"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
