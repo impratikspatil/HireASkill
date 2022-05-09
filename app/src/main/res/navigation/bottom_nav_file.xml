@@ -13,9 +13,7 @@
         <action
             android:id="@+id/action_jobs_fragment_to_add_Job_fragment"
             app:destination="@id/add_Job_fragment" />
-        <action
-            android:id="@+id/action_jobs_fragment_to_chatFragment"
-            app:destination="@id/chatFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/add_Job_fragment"
@@ -27,10 +25,6 @@
         android:name="com.example.hireaskill.Home.User_skill_fragment"
         android:label="USER SKILL"
         tools:layout="@layout/fragment_user_skill_fragment" />
-    <fragment
-        android:id="@+id/chatFragment"
-        android:name="com.example.hireaskill.Home.ChatFragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
+
 </navigation>
 
