@@ -29,5 +29,9 @@
     <string name="salary">Salary(INR)</string>
     <string name="chat">CHAT</string>
     <string name="hireaskill123">HIREASKILL</string>
+    <string name="mobile_contact"><a href="7276818115">7276818115</a></string>
+    <string name="app_link"><a href="https://instagram.com/mrunmayiii__?igshid=YmMyMTA2M2Y">Instagram</a></string>
+    <string name="email_link"><a href="impratikspatil@gmail.com">Email</a></string>
+
 
 </resources>

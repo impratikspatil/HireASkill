@@ -1,5 +1,6 @@
 package com.example.hireaskill.Home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -57,6 +58,8 @@ class Jobs_fragment : Fragment() {
 
         binding.floatbtn.setOnClickListener {
 
+//            val intent = Intent(context, ChatListActivity::class.java)
+//            startActivity(intent)
             navController.navigate(R.id.action_jobs_fragment_to_add_Job_fragment)
 
 

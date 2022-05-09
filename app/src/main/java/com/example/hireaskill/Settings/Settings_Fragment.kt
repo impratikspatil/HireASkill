@@ -51,6 +51,9 @@ class Settings_Fragment : Fragment() {
             navController.navigate(R.id.action_settings_Fragment_to_mentionedJobsFragment)
 
         }
+        binding.help.setOnClickListener{
+            navController.navigate(R.id.action_settings_Fragment_to_helpFragment)
+        }
 
 
         }

@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_settings_Fragment_to_mentionedJobsFragment"
             app:destination="@id/mentionedJobsFragment" />
+        <action
+            android:id="@+id/action_settings_Fragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
     </fragment>
     <fragment
         android:id="@+id/userProfileFragment"
@@ -27,4 +30,13 @@
         android:name="com.example.hireaskill.Settings.MentionedJobsFragment"
         android:label="JOBS MENTIONED"
         tools:layout="@layout/fragment_mentioned_jobs" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.hireaskill.Settings.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_settings_Fragment"
+            app:destination="@id/settings_Fragment" />
+    </fragment>
 </navigation>

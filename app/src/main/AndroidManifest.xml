@@ -20,6 +20,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Home.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ChatListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Settings.SettingsActivity"
             android:exported="false" />
         <activity

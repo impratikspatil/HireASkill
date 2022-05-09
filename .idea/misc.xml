@@ -4,6 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/back_arrow.xml" value="0.167" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/call_icon.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/email_new.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_title_24.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_instagramvec.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/instagram.xml" value="0.1075" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/instagramm.xml" value="0.1075" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/messageboxbg.xml" value="0.1" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/receiver_bg.xml" value="0.1" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/sender_bg.xml" value="0.1" />
@@ -18,8 +28,10 @@
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_settings.xml" value="0.1" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.1" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_add__job_fragment.xml" value="0.10733695652173914" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_help.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.22" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.1" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/receive.xml" value="0.10235507246376811" />
         <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/sent.xml" value="0.10235507246376811" />

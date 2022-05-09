@@ -31,12 +31,14 @@ class UserAdapter(val context: Context, private val userList: ArrayList<UserJob>
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val currentUser = userList[position]
         holder.textName.text = currentUser.username
+//        holder.profilePhoto.im = currentUser.profileImg
 
         val uid = FirebaseAuth.getInstance().currentUser?.uid.toString()
-//        val storageref = FirebaseStorage.getInstance().reference.child("Users/$uid.jpg")
-//        val localFile = File.createTempFile("temp","jpg")
-//        storageref.getFile(localFile)
-//        val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+//        val imgName =
+        val storageref = FirebaseStorage.getInstance().reference.child("images/$uid.jpg")
+        val localFile = File.createTempFile("temp","jpg")
+        storageref.getFile(localFile)
+        val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
 
 
         holder.itemView.setOnClickListener{

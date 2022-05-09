@@ -27,5 +27,6 @@
         android:focusable="true"
         android:src="@drawable/ic_baseline_add_24"
         android:layout_gravity="right|bottom"
+
         />
 </FrameLayout>
