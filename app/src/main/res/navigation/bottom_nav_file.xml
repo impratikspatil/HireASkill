@@ -17,6 +17,9 @@
             android:id="@+id/action_jobs_fragment_to_chatFragment"
             app:destination="@id/chatFragment" />
     </fragment>
+
+
+
     <fragment
         android:id="@+id/add_Job_fragment"
         android:name="com.example.hireaskill.Home.Add_Job_fragment"

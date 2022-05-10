@@ -28,12 +28,11 @@
         <activity
             android:name=".Settings.SettingsActivity"
             android:exported="false" />
-        <activity
-            android:name=".Home.ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Home.ChatListActivity"
-            android:exported="false" />
+
+<!--        <activity-->
+<!--            android:name=".Home.ChatListActivity"-->
+<!--            android:exported="false"-->
+<!--            tools:ignore="DuplicateActivity" />-->
         <activity
             android:name=".Home.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -46,11 +45,7 @@
             android:name=".Login.LoginActivity"
             android:exported="true"
             tools:ignore="MissingClass">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
