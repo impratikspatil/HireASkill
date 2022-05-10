@@ -1,21 +1,23 @@
 package com.example.hireaskill.Home
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-
 class ChatActivity : AppCompatActivity() {
     private lateinit var chatRecyclerView : RecyclerView
     private lateinit var messageBox : EditText
     private lateinit var sendButton : ImageView
+    private lateinit var callButton : ImageView
 //    private lateinit var userAdapter : RecyclerView
     private lateinit var messageList: ArrayList<MessageModal>
     private lateinit var messageAdapter: MessageAdapter
@@ -31,6 +33,8 @@ class ChatActivity : AppCompatActivity() {
 
         val name = intent.getStringExtra("name")
         val receiverUid = intent.getStringExtra("uid")
+        val user_number = intent.getStringExtra("user_number")
+        Log.d("YOO","$user_number")
         val senderUid = FirebaseAuth.getInstance().currentUser?.uid
 
         dbRef = FirebaseDatabase.getInstance().getReference()
@@ -41,6 +45,7 @@ class ChatActivity : AppCompatActivity() {
         chatRecyclerView = findViewById(R.id.chatRecyclerView)
         messageBox = findViewById(R.id.messageBox)
         sendButton= findViewById(R.id.sentButton)
+        callButton=findViewById(R.id.callBtn)
         messageList = ArrayList()
         messageAdapter = MessageAdapter(this,messageList)
 
@@ -49,6 +54,7 @@ class ChatActivity : AppCompatActivity() {
 
 
         supportActionBar?.title=name
+
 
 
         dbRef.child("chats").child(senderRoom!!).child("messages")
@@ -90,6 +96,21 @@ class ChatActivity : AppCompatActivity() {
                     }
                 messageBox.setText("")
             }
+
+            callButton.setOnClickListener{
+                if(user_number.toString()!="null"){
+                    val dialIntent = Intent(Intent.ACTION_DIAL)
+                    dialIntent.data = Uri.parse("tel:" +"$user_number")
+                    startActivity(dialIntent)
+
+                }
+                else {
+                    Toast.makeText(this,"Phone number is not available!! ",Toast.LENGTH_SHORT).show()
+
+                }
+
+            }
+
 
 
 

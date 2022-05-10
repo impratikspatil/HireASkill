@@ -2,20 +2,17 @@ package com.example.hireaskill.Home
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hireaskill.R
 import com.example.hireaskill.databinding.FragmentChatBinding
-import com.example.hireaskill.databinding.FragmentJobsFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.auth.User
 
 
 class ChatFragment : Fragment() {
@@ -25,6 +22,7 @@ class ChatFragment : Fragment() {
     private lateinit var datalist: ArrayList<Chatdata>
     private lateinit var messageList: ArrayList<MessageModal>
     private lateinit var messageAdapter: MessageAdapter
+    private lateinit var mAuth: FirebaseAuth
     private lateinit var dbRef : DatabaseReference
 
     var senderRoom:String?= null
@@ -54,22 +52,27 @@ class ChatFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navController=findNavController()
         val da = mutableListOf<String>()
+
         val userid = FirebaseAuth.getInstance().currentUser!!.uid
         dbRef = FirebaseDatabase.getInstance().getReference()
 
 
         val list = mutableListOf<String>()
         list.clear()
+
+
+
         dbRef = FirebaseDatabase.getInstance().getReference("RecentChats").child(userid.toString())
-        dbRef.addValueEventListener(object : ValueEventListener{
+        dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
-                if(snapshot.exists()){
-                    for(jobdata in snapshot.children){
+                if (snapshot.exists()) {
+                    for (jobdata in snapshot.children) {
 
-                        val data = jobdata.getValue(object : GenericTypeIndicator<HashMap<String,Any>>() {})
+                        val data = jobdata.getValue(object :
+                            GenericTypeIndicator<HashMap<String, Any>>() {})
 
-                        for(set in data!!.keys) {
+                        for (set in data!!.keys) {
                             if (set != userid) {
                                 list.add(set.toString())
                                 Log.d("TAAA", "${data.keys}")
@@ -77,12 +80,15 @@ class ChatFragment : Fragment() {
                         }
                     }
                 }
-                Log.d("TABC","${list}")
+                Log.d("TABC", "${list}")
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+
             }
+
+
+
 
         })
 
@@ -121,7 +127,7 @@ class ChatFragment : Fragment() {
                     for(result in task) {
 
                         if(result.id in list){
-                            datalist.add(Chatdata(result.get("username").toString(),result.id.toString(),result.get("profile_url").toString()))
+                            datalist.add(Chatdata(result.get("username").toString(),result.id,result.get("profile_url").toString(),result.get("number").toString()))
                         }
                     }
                     Log.d("SHRE","$datalist")

@@ -41,7 +41,7 @@ class ChatAdapter(private val joblist:ArrayList<Chatdata>,private var ctx: Conte
         val storageref = FirebaseStorage.getInstance().reference.child("users/$uid.jpg")
         val localFile = File.createTempFile("temp","jpg")
         storageref.getFile(localFile)
-        val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+       // val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
         //holder.binding.imageRv.setImageBitmap(bitmap)
 //        if(job.Profile_Pic!=null){
 //            Picasso.get().load(job.Profile_Pic).error(R.drawable.ic_baseline_person_24)
@@ -55,6 +55,7 @@ class ChatAdapter(private val joblist:ArrayList<Chatdata>,private var ctx: Conte
         holder.itemView.setOnClickListener{
             val intent = Intent(ctx, ChatActivity::class.java)
             intent.putExtra("name",job.username)
+            intent.putExtra("user_number",job.number)
             intent.putExtra("uid",job.userid)
 
             ctx.startActivity(intent)

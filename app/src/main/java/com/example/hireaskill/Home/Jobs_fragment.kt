@@ -65,7 +65,7 @@ class Jobs_fragment : Fragment() {
 
         }
 
-        val userid = FirebaseAuth.getInstance().currentUser!!.uid
+//        val userid = FirebaseAuth.getInstance().currentUser!!.uid
 
         dbRef = FirebaseDatabase.getInstance().getReference("Jobs")
         dbRef.addValueEventListener(object : ValueEventListener{
