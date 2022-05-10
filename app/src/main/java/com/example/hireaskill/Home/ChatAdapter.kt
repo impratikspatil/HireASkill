@@ -55,6 +55,7 @@ class ChatAdapter(private val joblist:ArrayList<Chatdata>,private var ctx: Conte
         holder.itemView.setOnClickListener{
             val intent = Intent(ctx, ChatActivity::class.java)
             intent.putExtra("name",job.username)
+
             intent.putExtra("uid",job.userid)
 
             ctx.startActivity(intent)

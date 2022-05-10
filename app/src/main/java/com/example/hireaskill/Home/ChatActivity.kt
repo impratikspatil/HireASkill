@@ -1,11 +1,13 @@
 package com.example.hireaskill.Home
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
@@ -13,16 +15,18 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class ChatActivity : AppCompatActivity() {
-    private lateinit var chatRecyclerView : RecyclerView
-    private lateinit var messageBox : EditText
-    private lateinit var sendButton : ImageView
-//    private lateinit var userAdapter : RecyclerView
+    private lateinit var chatRecyclerView: RecyclerView
+    private lateinit var messageBox: EditText
+    private lateinit var sendButton: ImageView
+
+    //    private lateinit var userAdapter : RecyclerView
     private lateinit var messageList: ArrayList<MessageModal>
     private lateinit var messageAdapter: MessageAdapter
-    private lateinit var dbRef : DatabaseReference
+    private lateinit var dbRef: DatabaseReference
 
-    var receiverRoom:String?= null
-    var senderRoom:String?= null
+
+    var receiverRoom: String? = null
+    var senderRoom: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +34,7 @@ class ChatActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar_chat))
 
         val name = intent.getStringExtra("name")
+
         val receiverUid = intent.getStringExtra("uid")
         val senderUid = FirebaseAuth.getInstance().currentUser?.uid
 
@@ -37,43 +42,44 @@ class ChatActivity : AppCompatActivity() {
         senderRoom = receiverUid.toString() + senderUid.toString()
         receiverRoom = senderUid.toString() + receiverUid.toString()
 
-        Log.d("TAG","$senderRoom    ->  $receiverRoom   ->$senderUid ->$receiverUid")
+        Log.d("TAG", "$senderRoom    ->  $receiverRoom   ->$senderUid ->$receiverUid")
         chatRecyclerView = findViewById(R.id.chatRecyclerView)
         messageBox = findViewById(R.id.messageBox)
-        sendButton= findViewById(R.id.sentButton)
+        sendButton = findViewById(R.id.sentButton)
+
         messageList = ArrayList()
-        messageAdapter = MessageAdapter(this,messageList)
+        messageAdapter = MessageAdapter(this, messageList)
 
         chatRecyclerView.layoutManager = LinearLayoutManager(this)
-        chatRecyclerView.adapter=messageAdapter
+        chatRecyclerView.adapter = messageAdapter
 
 
-        supportActionBar?.title=name
+        supportActionBar?.title = name
 
 
         dbRef.child("chats").child(senderRoom!!).child("messages")
-            .addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                messageList.clear()
-                for(postSnapshot in snapshot.children){
-                    val message = postSnapshot.getValue(MessageModal::class.java)
-                    messageList.add(message!!)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    messageList.clear()
+                    for (postSnapshot in snapshot.children) {
+                        val message = postSnapshot.getValue(MessageModal::class.java)
+                        messageList.add(message!!)
+                    }
+                    messageAdapter.notifyDataSetChanged()
                 }
-                messageAdapter.notifyDataSetChanged()
-            }
 
-            override fun onCancelled(error: DatabaseError) {
-            }
-        })
+                override fun onCancelled(error: DatabaseError) {
+                }
+            })
 
         sendButton.setOnClickListener {
-            val chat = HashMap<String,Any>()
+            val chat = HashMap<String, Any>()
             val message = messageBox.text.toString()
             if (receiverUid != null) {
                 chat.put(receiverUid, 1)
             }
             if (senderUid != null) {
-                chat.put(senderUid,1)
+                chat.put(senderUid, 1)
             }
             if (message == "") {
                 messageBox.error = "Message can not be empty!!!"
@@ -85,14 +91,23 @@ class ChatActivity : AppCompatActivity() {
                     .setValue(messageObject).addOnSuccessListener {
                         dbRef.child("chats").child(receiverRoom!!).child("messages").push()
                             .setValue(messageObject)
-                        dbRef.child("RecentChats").child(senderUid!!).child(senderUid).updateChildren(chat)
-                        dbRef.child("RecentChats").child(receiverUid!!).child(receiverUid).updateChildren(chat)
+                        dbRef.child("RecentChats").child(senderUid!!).child(senderUid)
+                            .updateChildren(chat)
+                        dbRef.child("RecentChats").child(receiverUid!!).child(receiverUid)
+                            .updateChildren(chat)
                     }
                 messageBox.setText("")
             }
 
 
-
         }
+
+
+
     }
+    override fun onBackPressed() {
+        startActivity(Intent(this, MainActivity::class.java))
+
+    }
+
 }

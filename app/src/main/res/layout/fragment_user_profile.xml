@@ -71,8 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/grey"
-
-
+                app:startIconDrawable="@drawable/user_icon_white"
+                app:startIconTint="@color/white"
                 android:hint="@string/username">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -94,6 +94,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:textColorHint="@color/grey"
+                app:prefixText="+91 "
+                app:prefixTextColor="#ff0000"
+                app:startIconDrawable="@drawable/ic_baseline_call_24"
+                app:startIconTint="@color/white"
                 android:hint="@string/mobile_number">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -103,7 +107,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginBottom="10dp"
                     android:textColor="#ffffff"
-
+                    android:maxLength="10"
                     android:inputType="number"/>
 
             </com.google.android.material.textfield.TextInputLayout>

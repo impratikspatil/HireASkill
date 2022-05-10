@@ -42,7 +42,7 @@ class SkillAdapter(private val joblist:ArrayList<UserData>,private var ctx: Cont
 
         holder.chatbutton.setOnClickListener{
             val intent = Intent(ctx, ChatActivity::class.java)
-            intent.putExtra("name",job.username)
+            intent.putExtra("name",job.jobt)
             intent.putExtra("uid",job.userid)
             Log.d("VISHA" ,"${job.userid}")
             ctx.startActivity(intent)
