@@ -1,22 +1,26 @@
 package com.example.hireaskill.Login
+import android.R
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.hireaskill.Home.MainActivity
-import com.example.hireaskill.R
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.replace
+
 import com.example.hireaskill.databinding.FragmentSignupFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.ktx.Firebase
+
 
 class signup_fragment : Fragment() {
 
@@ -38,11 +42,11 @@ class signup_fragment : Fragment() {
 
         fireAuth= FirebaseAuth.getInstance()
 
-        var button : Button = view.findViewById(R.id.registerNow)
-        var name : EditText = view.findViewById(R.id.txtName)
-        var email : EditText = view.findViewById(R.id.txtEmail)
-        var pass1 : EditText = view.findViewById(R.id.txtPass)
-        var pass2 : EditText = view.findViewById(R.id.txtPassConfirm)
+        var button : Button = view.findViewById(com.example.hireaskill.R.id.registerNow)
+        var name : EditText = view.findViewById(com.example.hireaskill.R.id.txtName)
+        var email : EditText = view.findViewById(com.example.hireaskill.R.id.txtEmail)
+        var pass1 : EditText = view.findViewById(com.example.hireaskill.R.id.txtPass)
+        var pass2 : EditText = view.findViewById(com.example.hireaskill.R.id.txtPassConfirm)
 
         button.setOnClickListener{
             if(name.text.isEmpty()){
@@ -96,9 +100,9 @@ class signup_fragment : Fragment() {
 
                     Toast.makeText(context, "ACCOUNT CREATED SUCCESSFULLY", Toast.LENGTH_SHORT).show()
 
+                    val fragmentlogin=login_fragment()
 
-                    val intent= Intent(requireContext(), MainActivity::class.java)
-                    startActivity(intent)
+                    requireActivity().supportFragmentManager.beginTransaction().replace(com.example.hireaskill.R.id.fragmentContainerView,login_fragment()).commit()
 
                 }.addOnFailureListener{e->
                     Toast.makeText(context, "ACCOUNT CREATION FAILED DUE TO $e", Toast.LENGTH_SHORT).show()
@@ -114,7 +118,7 @@ class signup_fragment : Fragment() {
 
         //changed this code
         binding.login.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView,fragmentlogin).commit()
+            requireActivity().supportFragmentManager.beginTransaction().replace(com.example.hireaskill.R.id.fragmentContainerView,fragmentlogin).commit()
 
         }
 
