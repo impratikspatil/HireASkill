@@ -43,11 +43,11 @@ class ChatAdapter(private val joblist:ArrayList<Chatdata>,private var ctx: Conte
         storageref.getFile(localFile)
         val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
         //holder.binding.imageRv.setImageBitmap(bitmap)
-        if(job.Profile_Pic!=null){
-            Picasso.get().load(job.Profile_Pic).error(R.drawable.ic_baseline_person_24)
-                .into(holder.profile)
-
-        }
+//        if(job.Profile_Pic!=null){
+//            Picasso.get().load(job.Profile_Pic).error(R.drawable.ic_baseline_person_24)
+//                .into(holder.profile)
+//
+//        }
 
 
         holder.owner.text=job.username
