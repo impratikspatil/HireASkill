@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#363636"
     tools:context=".Home.ChatActivity">
 
 
@@ -26,18 +27,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-
             app:titleTextColor="#ffffff" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_alignParentTop="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:layout_marginBottom="5dp"
+        />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -55,6 +58,8 @@
             android:cursorVisible="true"
             android:textCursorDrawable="@color/teal_200"
             android:hint="Type a message"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/grey"
             android:layout_marginLeft="10dp"
             android:layout_weight="85"
             android:layout_marginBottom="5dp"

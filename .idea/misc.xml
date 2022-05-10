@@ -3,105 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/back_arrow.xml" value="0.167" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/call_icon.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/email_new.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_baseline_title_24.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_instagramvec.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/instagram.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/instagramm.xml" value="0.1075" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/messageboxbg.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/receiver_bg.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/sender_bg.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/sent_msg_bg.xml" value="0.1065" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/user_icon.xml" value="0.167" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/user_icon_white.xml" value="0.167" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/user_profile.xml" value="0.167" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/drawable/user_profile2.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_chat.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_chat_list.xml" value="0.22" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/activity_settings.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_add__job_fragment.xml" value="0.10733695652173914" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_help.xml" value="0.22" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.18385416666666668" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.22" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/receive.xml" value="0.10235507246376811" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/sent.xml" value="0.10235507246376811" />
-        <entry key="..\:/Users/HP/Downloads/HireASkill/app/src/main/res/layout/user_layout.xml" value="0.10235507246376811" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/button_background.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/frame6_svg.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/key.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/login.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-mdpi/login_2.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/cursor.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_currency_rupee_24.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_edit_note_24.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_title_24.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_launcher_background.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/profile_person.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_icon.xml" value="0.1425" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_icon_white.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_profile.xml" value="0.15" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout-v28/fragment_add__job_fragment.xml" value="0.19927536231884058" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_dashboard.xml" value="0.19927536231884058" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.20018115942028986" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.14" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_settings.xml" value="0.33" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_add__job_fragment.xml" value="0.22" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_add_job_fragment.xml" value="0.16" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.25" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.2" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.19927536231884058" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_signup_fragment.xml" value="0.16" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_profile.xml" value="0.25" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skill_fragment.xml" value="0.33" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.33" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/menu/btmnav_menu.xml" value="0.30416666666666664" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.206" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.206" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2525" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2525" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/receiver_bg.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/sender_bg.xml" value="0.2525" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_icon.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat_list.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_chat.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.1420282542885974" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_profile.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skill_fragment.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skills.xml" value="0.2694746376811594" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/jobmentionedlist.xml" value="0.18" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/jobmentionedlist.xml" value="0.22" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/receive.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/recentchatlist.xml" value="0.30833333333333335" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/recentchatusernames.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/sent.xml" value="0.30833333333333335" />
         <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/menu/btmnav_menu.xml" value="0.3026041666666667" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2005" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat.xml" value="0.14673913043478262" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.14673913043478262" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/chat_cardview.xml" value="0.264" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_add__job_fragment.xml" value="0.14356884057971014" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_chat.xml" value="0.22780797101449277" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.14673913043478262" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.22780797101449277" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skill_fragment.xml" value="0.264" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skills.xml" value="0.2" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.4" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/receive.xml" value="0.25729166666666664" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/recentchatlist.xml" value="0.25729166666666664" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/layout/sent.xml" value="0.25729166666666664" />
-        <entry key="..\:/Users/shrey/AndroidStudioProjects/HireASkill/app/src/main/res/menu/btmnav_menu.xml" value="0.25729166666666664" />
       </map>
     </option>
   </component>

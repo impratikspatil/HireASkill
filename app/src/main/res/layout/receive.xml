@@ -10,7 +10,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:paddingLeft="10dp"
-        android:background="@drawable/receiver_bg">
+        android:background="@drawable/receiver_bg"
+        >
 
 
         <TextView

@@ -18,10 +18,10 @@ class SplashScreen : AppCompatActivity() {
         var backgroundimage=findViewById<LottieAnimationView>(R.id.backgroundimg)
         var textview=findViewById<TextView>(R.id.texthire)
 
-        textview.animate().translationY(3500f).setDuration(1000).setStartDelay(2000)
+        textview.animate().translationY(3500f).setDuration(1000).setStartDelay(5000)
 
-        backgroundimage.animate().translationY(-3500f).setDuration(1000).startDelay = 2000
-        lottieAnimationView.animate().translationY(3500f).setDuration(1000).setStartDelay(2000)
+        backgroundimage.animate().translationY(-3500f).setDuration(1000).startDelay = 5000
+        lottieAnimationView.animate().translationY(3500f).setDuration(1000).setStartDelay(5000)
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationStart(animation: Animator) {}
                 override fun onAnimationEnd(animation: Animator) {
