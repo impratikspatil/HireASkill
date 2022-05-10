@@ -11,6 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HireASkill">
         <activity
+            android:name=".Home.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ChatListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Settings.SettingsActivity"
             android:exported="false" />
         <activity
@@ -21,12 +36,12 @@
             android:exported="false" />
         <activity
             android:name=".Home.MainActivity"
-            android:windowSoftInputMode="adjustPan"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false"
-            tools:ignore="MissingClass"
             android:noHistory="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="MissingClass" />
         <activity
             android:name=".Login.LoginActivity"
             android:exported="true"

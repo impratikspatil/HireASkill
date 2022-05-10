@@ -7,5 +7,6 @@ data class UserJob(
     val jobsal:String?=null,
     val jobdes:String?=null,
     val username:String?=null,
-    val userid:String?=null
+    val userid:String?=null,
+    val profileImg:String?=null
 )

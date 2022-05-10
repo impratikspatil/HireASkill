@@ -27,7 +27,7 @@ class ChatActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
-//        setSupportActionBar(findViewById(R.id.toolbar_chat))
+        setSupportActionBar(findViewById(R.id.toolbar_chat))
 
         val name = intent.getStringExtra("name")
         val receiverUid = intent.getStringExtra("uid")
