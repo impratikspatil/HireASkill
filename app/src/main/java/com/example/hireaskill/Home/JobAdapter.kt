@@ -1,5 +1,7 @@
 package com.example.hireaskill.Home
 
+import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
 import com.google.firebase.firestore.auth.User
 
-class JobAdapter(private val joblist:ArrayList<UserJob>) : RecyclerView.Adapter<JobAdapter.jobviewholder>() {
+class JobAdapter(private val joblist:ArrayList<UserJob>,private var ctx: Context) : RecyclerView.Adapter<JobAdapter.jobviewholder>() {
 
     class jobviewholder(view: View): RecyclerView.ViewHolder(view)
     {
@@ -37,6 +39,13 @@ class JobAdapter(private val joblist:ArrayList<UserJob>) : RecyclerView.Adapter<
         holder.location.text=job.jobloc
         holder.owner.text=job.username
 
+        holder.itemView.setOnClickListener{
+            val intent = Intent(ctx, ChatActivity::class.java)
+            intent.putExtra("name",job.username)
+            intent.putExtra("uid",job.userid)
+
+            ctx.startActivity(intent)
+        }
 
     }
 

@@ -63,7 +63,7 @@ class MentionedJobsFragment : Fragment() {
 
                         datalist.add(data!!)
                     }
-                    val jobadapter = JobAdapter(datalist)
+                    val jobadapter = JobAdapter(datalist,requireContext())
                     recyclerView.adapter = jobadapter
 
                     recyclerView.visibility = View.VISIBLE

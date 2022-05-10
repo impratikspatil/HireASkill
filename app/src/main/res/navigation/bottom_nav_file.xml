@@ -26,11 +26,19 @@
         android:id="@+id/user_skill_fragment"
         android:name="com.example.hireaskill.Home.User_skill_fragment"
         android:label="USER SKILL"
-        tools:layout="@layout/fragment_user_skill_fragment" />
+        tools:layout="@layout/fragment_user_skill_fragment" >
+        <action
+            android:id="@+id/action_user_skill_fragment_to_userSkillsFragment"
+            app:destination="@id/userSkillsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.example.hireaskill.Home.ChatFragment"
-        android:label="fragment_chat"
+        android:label="CHAT"
         tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/userSkillsFragment"
+        android:name="com.example.hireaskill.Home.UserSkillsFragment"
+        android:label="UserSkillsFragment" />
 </navigation>
 

@@ -1,109 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="10dp"
-    android:background="@color/cardviewcolor"
-    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:background="#F4D2D2"
     >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal"
-
-             >
-
-              <TextView
-
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-
-                  android:textSize="20sp"
-                  android:textStyle="bold"
-                  android:text="ANDROID DEVELOPER"/>
-
-             <TextView
-
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:layout_marginStart="20dp"
-
-                 android:text="15/month"
-                 android:layout_marginBottom="5dp"
-                 android:textStyle="bold"
-                 android:gravity="end"
-
-
-
-                 />
-
-         </LinearLayout>
-
+        android:background="#F1E2E2"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
             >
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ownerimg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_person_24"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:textSize="20sp"
+                android:text="Username  :-"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textStyle="bold"
-                android:text="PRATIK PATIL"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter job title"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"/>
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location :-"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="20sp"/>
+            <TextView
+
+                android:id="@+id/locationuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Location"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"/>
 
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills    :-"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/user_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:hint=" Enter  name"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="20sp" />
+
+
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            >
-            <ImageView
-                android:id="@+id/loc_icon"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/description_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_person_24"/>
+                android:background="@drawable/button_background"
+                android:backgroundTint="#FF0000"
+                android:text="Description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                android:layout_weight="20"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="60"/>
 
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:text="Location"
-                android:layout_marginStart="10dp"
-                />
-
+            <Button
+                android:layout_weight="20"
+                android:layout_marginRight="10dp"
+                android:id="@+id/Chat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#FF0000"
+                android:text="Chat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
 
         </LinearLayout>
-
-
-
-
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>
+

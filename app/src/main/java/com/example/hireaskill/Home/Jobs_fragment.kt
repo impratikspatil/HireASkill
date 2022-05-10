@@ -80,7 +80,7 @@ class Jobs_fragment : Fragment() {
                                 da.add(dat.toString())
                             }
 
-                            val abc = UserJob(da[0],da[3],da[1]," ",da[4])
+                            val abc = UserJob(da[0],da[4],da[1],da[3],da[5],da[2])
                             datalist.add(abc)
 
 
@@ -91,7 +91,7 @@ class Jobs_fragment : Fragment() {
 //                        datalist.add(data!!)
 
                     }
-                    val jobadapter = JobAdapter(datalist)
+                    val jobadapter = JobAdapter(datalist,requireContext())
                     recyclerView.adapter = jobadapter
 
                     recyclerView.visibility = View.VISIBLE

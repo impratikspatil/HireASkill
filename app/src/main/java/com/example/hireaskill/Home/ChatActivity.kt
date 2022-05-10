@@ -34,9 +34,10 @@ class ChatActivity : AppCompatActivity() {
         val senderUid = FirebaseAuth.getInstance().currentUser?.uid
 
         dbRef = FirebaseDatabase.getInstance().getReference()
-        senderRoom = receiverUid + senderUid
-        receiverRoom = senderUid + receiverUid
+        senderRoom = receiverUid.toString() + senderUid.toString()
+        receiverRoom = senderUid.toString() + receiverUid.toString()
 
+        Log.d("TAG","$senderRoom    ->  $receiverRoom   ->$senderUid ->$receiverUid")
         chatRecyclerView = findViewById(R.id.chatRecyclerView)
         messageBox = findViewById(R.id.messageBox)
         sendButton= findViewById(R.id.sentButton)
@@ -66,7 +67,14 @@ class ChatActivity : AppCompatActivity() {
         })
 
         sendButton.setOnClickListener {
+            val chat = HashMap<String,Any>()
             val message = messageBox.text.toString()
+            if (receiverUid != null) {
+                chat.put(receiverUid, 1)
+            }
+            if (senderUid != null) {
+                chat.put(senderUid,1)
+            }
             if (message == "") {
                 messageBox.error = "Message can not be empty!!!"
                 messageBox.requestFocus()
@@ -77,9 +85,14 @@ class ChatActivity : AppCompatActivity() {
                     .setValue(messageObject).addOnSuccessListener {
                         dbRef.child("chats").child(receiverRoom!!).child("messages").push()
                             .setValue(messageObject)
+                        dbRef.child("RecentChats").child(senderUid!!).child(senderUid).updateChildren(chat)
+                        dbRef.child("RecentChats").child(receiverUid!!).child(receiverUid).updateChildren(chat)
                     }
                 messageBox.setText("")
             }
+
+
+
         }
     }
 }

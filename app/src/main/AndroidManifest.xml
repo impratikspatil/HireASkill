@@ -14,6 +14,12 @@
             android:name=".Settings.SettingsActivity"
             android:exported="false" />
         <activity
+            android:name=".Home.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ChatListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home.MainActivity"
             android:windowSoftInputMode="adjustPan"
             android:configChanges="keyboardHidden|orientation|screenSize"
