@@ -1,18 +1,17 @@
 package com.example.hireaskill.Home
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hireaskill.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+
 class ChatActivity : AppCompatActivity() {
     private lateinit var chatRecyclerView : RecyclerView
     private lateinit var messageBox : EditText
@@ -54,7 +53,6 @@ class ChatActivity : AppCompatActivity() {
 
 
         supportActionBar?.title=name
-
 
 
         dbRef.child("chats").child(senderRoom!!).child("messages")
@@ -111,9 +109,10 @@ class ChatActivity : AppCompatActivity() {
 
             }
 
-
-
-
-        }
     }
+    
 }
+    override fun onBackPressed() {
+        startActivity(Intent(this, MainActivity::class.java))
+
+    }}

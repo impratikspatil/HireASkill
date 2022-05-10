@@ -35,7 +35,7 @@
                 android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Enter job title"
+                android:hint="Enter  Name"
                 android:fontFamily="sans-serif-smallcaps"
                 android:layout_marginStart="15dp"
                 android:textSize="20sp"/>
@@ -87,10 +87,10 @@
             <TextView
                 android:id="@+id/user_skill"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
-                android:hint=" Enter  name"
                 android:fontFamily="sans-serif-smallcaps"
+                android:hint=" Enter  skill"
                 android:textSize="20sp" />
 
 

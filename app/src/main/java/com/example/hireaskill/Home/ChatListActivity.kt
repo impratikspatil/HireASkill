@@ -53,8 +53,6 @@ class ChatListActivity : AppCompatActivity() {
         })
 
     }
-    override fun onBackPressed() {
-        val intent = Intent(this,MainActivity::class.java)
-        startActivity(intent)
-    }
+
+
 }
