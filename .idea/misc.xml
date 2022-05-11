@@ -3,22 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat.xml" value="0.2921195652173913" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat_list.xml" value="0.2921195652173913" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_dashboard.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_login.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_settings.xml" value="0.2921195652173913" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_splash_screen.xml" value="0.2921195652173913" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/dialog_progress.xml" value="0.18342391304347827" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_chat.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_help.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.18342391304347827" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_login_fragment.xml" value="0.18342391304347827" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.18342391304347827" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.18342391304347827" />
-        <entry key="..\:/Users/Tarak/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_profile.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/receiver_bg.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/sender_bg.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_icon.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/drawable/user_icon_white.xml" value="0.2525" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_chat_list.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_main.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/add_job_items.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_chat.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_jobs_fragment.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_mentioned_jobs.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_settings.xml" value="0.1420282542885974" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_profile.xml" value="0.22" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skill_fragment.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/fragment_user_skills.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/joblist_card.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/jobmentionedlist.xml" value="0.22" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/receive.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/recentchatlist.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/recentchatusernames.xml" value="0.33" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/sent.xml" value="0.2" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/layout/user_layout.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/PRATIK PATIL/AndroidStudioProjects/HireASkill/app/src/main/res/menu/btmnav_menu.xml" value="0.3026041666666667" />
       </map>
     </option>
   </component>
